@@ -18,9 +18,10 @@ class HouseForm(forms.ModelForm):
 	transaction_date = forms.DateField(widget=forms.widgets.DateInput(attrs={'type': 'date'}), label = 'Transaction Date', help_text = 'Date on 	which the house would be sold')
 	age = forms.DecimalField(decimal_places=1, label = 'Age', help_text = 'Age of Your House (In years)', 
 	validators = [DecimalValidator(decimal_places = 1, max_digits = 10)])
-	mrt_station = forms.DecimalField(decimal_places=5, label = 'MRT Distance', help_text = 'Distance to nearest MRT Station (In Km)', 
+	mrt_station = forms.DecimalField(decimal_places=5, label = 'MRT Distance', help_text = 'Distance to nearest MRT Station (In meters)', 
 	validators = 	[DecimalValidator(decimal_places = 5, max_digits = 10)])
-	convenience_stores = forms.IntegerField(label = 'Convenience Stores', help_text = 'Distance to nearest Convenience Store as an Integer (in  	meters)', validators = [validate_int])
+	convenience_stores = forms.IntegerField(label = 'Convenience Stores',  
+	help_text = 'The number of Convenience Stores in proximity to the house (as an Integer)', validators = [validate_int])
 	latitude = forms.DecimalField(decimal_places=5, label = 'Latitude', help_text = 'Please Use Google Maps to find Latitude',
 	validators = [DecimalValidator(decimal_places = 5, max_digits = 10)])
 	longitude = forms.DecimalField(decimal_places=5, label = 'Longitude', help_text = 'Please Use Google Maps to find Longitude',
