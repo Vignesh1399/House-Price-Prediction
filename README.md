@@ -37,7 +37,3 @@ $ ./manage.py runserver
 ## Authors
 
 * **Vignesh R C** - [Vignesh1399](https://github.com/Vignesh1399)
-<<<<<<< HEAD
-
-=======
->>>>>>> 97c0ffc58623867751710035409ae87831cbb45c
