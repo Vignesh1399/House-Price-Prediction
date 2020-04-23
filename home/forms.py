@@ -20,7 +20,7 @@ class HouseForm(forms.ModelForm):
 	validators = [DecimalValidator(decimal_places = 1, max_digits = 10)])
 	mrt_station = forms.DecimalField(decimal_places=5, label = 'MRT Distance', help_text = 'Distance to nearest MRT Station (In Km)', 
 	validators = 	[DecimalValidator(decimal_places = 5, max_digits = 10)])
-	convenience_stores = forms.IntegerField(label = 'Convenience Stores', help_text = 'Distance to nearest Convenience Store as an Integer (in  	Km)', validators = [validate_int])
+	convenience_stores = forms.IntegerField(label = 'Convenience Stores', help_text = 'Distance to nearest Convenience Store as an Integer (in  	meters)', validators = [validate_int])
 	latitude = forms.DecimalField(decimal_places=5, label = 'Latitude', help_text = 'Please Use Google Maps to find Latitude',
 	validators = [DecimalValidator(decimal_places = 5, max_digits = 10)])
 	longitude = forms.DecimalField(decimal_places=5, label = 'Longitude', help_text = 'Please Use Google Maps to find Longitude',
