@@ -13,6 +13,7 @@ What things you need to install the software and how to install them
 ```
 $ sudo apt install git
 $ git clone https://github.com/Vignesh1399/House-Price-Prediction.git
+$ cd House-Price-Prediction
 $ sudo apt install python3
 $ python3 -m pip install --upgrade pip
 $ pip install django
