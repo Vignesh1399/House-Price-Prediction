@@ -26,7 +26,7 @@ SECRET_KEY = '-y$o*8h22i)f+5kom&9x^_su$_ofm-1wir@lncp7l(mo==5ws='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ 'vigneshrc.pythonanywhere.com', ]
 
 
 # Application definition
