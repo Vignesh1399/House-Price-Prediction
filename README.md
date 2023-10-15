@@ -18,6 +18,9 @@ $ sudo apt install python3
 $ python3 -m pip install --upgrade pip
 $ pip install django
 $ pip install django-crispy-forms
+$ pip install numpy
+$ pip install pandas
+$ pip install scikit-learn
 ```
 
 ### Installing
